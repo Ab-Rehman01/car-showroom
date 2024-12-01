@@ -82,21 +82,15 @@ footer p {
   padding: 0 20px; /* Add padding for spacing */
 }
 
-/* Mobile Adjustments */
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   .hero {
-    background-size: contain; /* Ensure the entire image fits */
-    height: auto; /* Allow the height to adjust based on content */
-    min-height: 100vh; /* Maintain viewport coverage */
+    background-size: contain !important; /* Ensures the full image is visible on mobile */
+    background-attachment: scroll; /* Avoid fixed backgrounds on mobile */
   }
 }
 
 /* Extra Small Screens */
-@media (max-width: 480px) {
-  .hero {
-    background-position: center top; /* Focus on the top for smaller screens */
-  }
-}
+
 .fade-in {
   animation: fadeIn 2s ease-in;
 }

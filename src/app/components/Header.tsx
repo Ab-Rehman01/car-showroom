@@ -29,7 +29,7 @@ const Header = () => {
       </div>
 
       {/* Navigation Links */}
-      <nav className={`nav ${menuOpen ? 'active' : ''} md:flex md:gap-4 md:items-center`}>
+      <nav className={`nav ${menuOpen ? 'active' : ''} md:flex md:gap-4 md:items-center md:ml-auto`}>
         <Link href="/" className="nav-link">
           Home
         </Link>

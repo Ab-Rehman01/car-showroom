@@ -26,15 +26,16 @@ h1, h2, h3 {
 
 /* Header Style */
 /* Header Style */
+/* Header Style */
 
-/* General Styles for Navigation */
+/* General Styles */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   background-color: #333;
-  position: relative;
+  position: relative; /* Ensures hamburger is positioned correctly */
 }
 
 header .logo {
@@ -83,6 +84,7 @@ nav a:hover {
     align-items: center;
     transform: translateX(-100%);
     transition: transform 0.3s ease;
+    z-index: 10; /* Ensure the nav is on top */
   }
 
   nav.active {
@@ -92,11 +94,18 @@ nav a:hover {
   /* Show the hamburger icon on mobile */
   .hamburger-icon {
     display: block;
+    z-index: 20; /* Ensure the hamburger is above the nav */
   }
 
   nav a {
     font-size: 24px;
     margin: 10px 0;
+  }
+
+  /* Style for close button (cross) */
+  .hamburger-icon svg {
+    color: white;
+    font-size: 30px; /* Adjust size */
   }
 }
 

@@ -1,4 +1,4 @@
-'use client';  // Make sure to add this for Client Component
+'use client';
 
 import Link from 'next/link';
 import React, { useState } from 'react';
@@ -13,7 +13,7 @@ const Header = () => {
   };
 
   return (
-    <header className="header flex justify-between items-center p-4 bg-black text-white">
+    <header className="header flex justify-between items-center p-4 bg-black text-white relative">
       {/* Logo */}
       <h1 className="logo text-lg font-bold flex items-center">
         <FaCar style={{ color: 'yellow', fontSize: '24px' }} /> KeM Autos
@@ -22,9 +22,9 @@ const Header = () => {
       {/* Hamburger Icon (Only on mobile) */}
       <div className="hamburger-icon md:hidden cursor-pointer" onClick={toggleMenu}>
         {menuOpen ? (
-          <FaTimes style={{ color: 'white', fontSize: '24px' }} />
+          <FaTimes className="text-white text-3xl" />
         ) : (
-          <FaBars style={{ color: 'white', fontSize: '24px' }} />
+          <FaBars className="text-white text-3xl" />
         )}
       </div>
 

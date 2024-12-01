@@ -1,10 +1,10 @@
 
-import HomeContent from "./components/HomeContents";
+import HeroSection from "./components/HomeContents";
 
 export default function Home() {
   return (
     <div>
-      <HomeContent />
+      <HeroSection />
     
     </div>
   );
